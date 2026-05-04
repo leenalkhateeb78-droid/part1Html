@@ -81,10 +81,15 @@ main > div:nth-of-type(2) section {
 }
 
 
-@media (min-width: 900px) {
-    main > div:nth-of-type(2) {
-        grid-template-columns: repeat(4, 1fr);
-    }
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 
@@ -154,7 +159,6 @@ footer {
 .warning { 
     color: #bb0707; 
 }
-
 
 .question {
     background-color: #1a1a1a;
