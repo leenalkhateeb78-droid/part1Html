@@ -1,199 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Dave Gray">
-        <meta name="description" content="Learning HTML">
-        <title>My Web Page</title>
 
-     <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        
-    </head>
-    <body>
+<head>
 
-        <header>
-            <h1>My Project leen </h1>
-            <nav>
-                <ul>
-                    <li class="text-lg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                        <a href="#html">Learning HTML</a></li>
+  <title>My Website</title>
 
-                    <li><a href="#vacation">Planning a Vacation</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#my-five-color">My Five Color</a></li>
-                    <li><a href="#form">Course Form</a></li>
-                    <li><a href="#about.html">About Me</a></li>
-                    <li><a href="#My Favorite Food">My Favorite Food </a></li>
-                    <li><a href="#My Trip">My Trip</a></li>
-                </ul>
-            </nav>
-        </header>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-        <main>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-            <div id="sections-container">
+</head>
 
-                <section id="html" class="containr">
-                    <h2>HTML</h2>
-                    <p>This is My FIRST page</p>
-                    <h3>My Daily Schedule</h3>
-                    <ol>
-                        <li>I have learned more about web dev.</li>
-                        <li>
-                            I plan my
-                            <abbr title="Mozilla Developer Network">
-                                <a
-                                    href="https://developer.mozilla.org/en-US/">schedule</a>
-                            </abbr>
-                        </li>
-                    </ol>
-                </section>
+<body class="bg-[#1a1a1a] text-[#e0e0e0] font-sans scroll-smooth pt-20">
 
-                <section id="vacation">
-                    <h2>I Am Also Planning a Vacation</h2>
-                    <p>I need a break</p>
-                    <ul>
-                        <li>Anywhere cold</li>
-                        <li>
-                            <address>
-                                Margaritaville Island Reserve Riviera Cancún<br>
-                                Mexico
-                            </address>
-                        </li>
-                    </ul>
-                    <dl>
-                        <dt>North Pole</dt>
-                        <dd>Very Cold</dd>
-                    </dl>
-                </section>
 
-            </div>
-            <hr>
 
-            <div class="grid-layout">
+  <nav
+    class="fixed top-0 left-0 w-full z-50 bg-[#333]/90 backdrop-blur-md border-b border-gray-700 py-4">
 
-                <section id="my-five-color">
-                    <h2>My Favorite Color</h2>
-                    <p>This section my Favorite color</p>
-                    <ul>
-                        <li>Red</li>
-                        <li>Green</li>
-                    </ul>
-                </section>
+    <div class="max-w-7xl mx-auto px-6">
 
-                <section id="projects">
-                    <h2>Projects</h2>
-                    <p>Build real web applications</p>
-                    <ul>
-                        <li>Angular</li>
-                        <li>Python</li>
-                    </ul>
-                </section>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
 
-                <section id="My Trip">
-                    <h2>My Trip OF 2025</h2>
-                    <p>First Trip</p>
-                    <ul>
-                        <li>Aqaba</li>
-                        <li>Egypt</li>
-                    </ul>
-                </section>
+        <h1 class="text-3xl font-bold text-[#27a7fd]">
+          My Project Leen
+        </h1>
 
-                <section id="My Favorite Food">
-                    <h2>My Favorite Food</h2>
-                    <p>Favorite Food</p>
-                    <ul>
-                        <li>Steak</li>
-                        <li>Lasagna</li>
-                    </ul>
-                </section>
+        <ul
+          class="flex flex-wrap justify-center gap-6 text-sm md:text-base font-bold">
 
-            </div>
+          <li>
+            <a href="#html"
+              class="hover:text-white transition duration-300">
+              Learning HTML
+            </a>
+          </li>
 
-            <hr>
+          <li>
+            <a href="#vacation"
+              class="hover:text-white transition duration-300">
+              Vacation
+            </a>
+          </li>
 
-            <section id="form">
-                <div class="header">
-                    <h1>Select And Submit To Join One Of Our Courses</h1>
+          <li>
+            <a href="#projects"
+              class="hover:text-white transition duration-300">
+              Projects
+            </a>
+          </li>
 
-                    <div class="content">
-                        <div class="account">
-                            <span class="email">Leenalkhateeb@gmail.com</span>
-                            <a
-                                href="https://www.google.com/account/about/?hl=en-US"
-                                target="_blank">Switch Account</a>
-                            <span class="icon">
-                                <i class="fa-solid fa-cloud-arrow-up"></i>
-                            </span>
-                        </div>
+          <li>
+            <a href="#colors"
+              class="hover:text-white transition duration-300">
+              Colors
+            </a>
+          </li>
 
-                        <p class="description">Your email and data will be
-                            recorded when submitting</p>
-                        <p class="warning">* Required fields</p>
-                    </div>
-                </div>
+          <li>
+            <a href="#food"
+              class="hover:text-white transition duration-300">
+              Food
+            </a>
+          </li>
 
-                <form>
+          <li>
+            <a href="#trip"
+              class="hover:text-white transition duration-300">
+              Trip
+            </a>
+          </li>
 
-                    <div class="question">
-                        <label>Email
+          <li>
+            <a href="#form"
+              class="hover:text-white transition duration-300">
+              Form
+            </a>
+          </li>
 
-                            <span class="required-icon">*</span>
-                        </label>
-                        <br>
-                        <input type="email" required
-                            placeholder="Your Email Address">
-                    </div>
+        </ul>
 
-                    <div class="question">
-                        <label>Name
-                            <span class="required-icon">*</span>
-                        </label>
-                        <br>
-                        <input type="text" required
-                            placeholder="Your Full Name">
-                    </div>
+      </div>
 
-                    <div class="question">
-                        <label>Phone Number
-                            <span class="required-icon">*</span>
-                        </label>
-                        <br>
-                        <input type="tel" required
-                            placeholder="Your Phone Number">
-                    </div>
+    </div>
 
-                    <div class="question">
-                        <label>Course
-                            <span class="required-icon">*</span>
-                        </label>
-                        <br>
-                        <select required>
-                            <option value>Select Course</option>
-                            <option>Angular</option>
-                            <option>ASP.NET</option>
-                            <option>Python</option>
-                        </select>
-                    </div>
+  </nav>
 
-                    <div class="actions">
-                        <button type="submit" class="submit-btn">Submit</button>
-                        <button type="reset">Clear Form</button>
-                    </div>
 
-                </form>
 
-            </section>
+  <section
+    class="relative h-screen flex items-center justify-center overflow-hidden">
 
-        </main>
+    <img
+      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+      alt="banner"
+      class="absolute inset-0 w-full h-full object-cover">
 
-        <footer>
-            <p>&lt;&lt;&lt; &copy; My Website &gt;&gt;&gt;</p>
-            <p><a href="#">Back to Top</a></p>
-        </footer>
+    <div class="absolute inset-0 bg-black/70"></div>
 
-    </body>
+    <div class="relative z-10 text-center px-6">
+
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+        alt="html"
+        class="w-32 mx-auto mb-6">
+
+      <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6">
+        Welcome To My Website
+      </h1>
+
+      <p class="text-lg md:text-2xl text-gray-300">
+        Learn HTML And Build Amazing Projects
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <main class="max-w-7xl mx-auto px-6 py-16">
+
+
+
+    <div class="flex flex-col md:flex-row gap-6 mb-14">
+
+
+      <section id="html"
+        class="flex-1 bg-[#252525] p-8 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition duration-300">
+
+        <h2 class="text-3xl font-bold text-[#27a7fd] mb-4">
+          HTML
+        </h2>
+
+        <p class="mb-4 text-gray-300">
+          This is my first web page.
+        </p>
+
+        <ol class="list-decimal pl-5 space-y-2 text-gray-400">
+
+          <li>I learned more about web development.</li>
+
+          <li>I plan my schedule every day.</li>
+
+        </ol>
+
+      </section>
+
+
+
+      <section id="vacation"
+        class="flex-1 bg-[#252525] p-8 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition duration-300">
+
+        <h2 class="text-3xl font-bold text-[#27a7fd] mb-4">
+          Vacation
+        </h2>
+
+        <p class="mb-4 text-gray-300">
+          I need a break somewhere cold.
+        </p>
+
+        <ul class="list-disc pl-5 space-y-2 text-gray-400">
+
+          <li>North Pole</li>
+
+          <li>Mexico</li>
+
+          <li>Aqaba</li>
+
+        </ul>
+
+      </section>
+
+    </div>
+
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+
+      <section
+        id="colors"
+        class="bg-[#252525] p-6 rounded-xl border border-gray-700 hover:-translate-y-2 transition duration-300">
+
+        <h2 class="text-2xl font-bold text-[#27a7fd] mb-4">
+          Favorite Colors
+        </h2>
+
+        <ul class="space-y-2 text-gray-300">
+
+          <li>Red</li>
+
+          <li>Green</li>
+
+        </ul>
+
+      </section>
+
+      <section
+        id="projects"
+        class="bg-[#252525] p-6 rounded-xl border border-gray-700 hover:-translate-y-2 transition duration-300">
+
+        <h2 class="text-2xl font-bold text-[#27a7fd] mb-4">
+          Projects
+        </h2>
+
+        <ul class="space-y-2 text-gray-300">
+
+          <li>Angular</li>
+
+          <li>Python</li>
+
+        </ul>
+
+      </section>
+
+      <section
+        id="trip"
+        class="bg-[#252525] p-6 rounded-xl border border-gray-700 hover:-translate-y-2 transition duration-300">
+
+        <h2 class="text-2xl font-bold text-[#27a7fd] mb-4">
+          My Trip
+        </h2>
+
+        <ul class="space-y-2 text-gray-300">
+
+          <li>Aqaba</li>
+
+          <li>Egypt</li>
+
+        </ul>
+
+      </section>
+
+      <section
+        id="food"
+        class="bg-[#252525] p-6 rounded-xl border border-gray-700 hover:-translate-y-2 transition duration-300">
+
+        <h2 class="text-2xl font-bold text-[#27a7fd] mb-4">
+          Favorite Food
+        </h2>
+
+        <ul class="space-y-2 text-gray-300">
+
+          <li>Steak</li>
+
+          <li>Lasagna</li>
+
+        </ul>
+
+      </section>
+
+    </div>
+
+
+
+    <section id="form"
+      class="sticky top-28 max-w-4xl mx-auto bg-[#252525] border border-gray-700 rounded-2xl p-10 shadow-2xl">
+
+      <div class="mb-8">
+
+        <h2 class="text-4xl font-bold text-[#27a7fd] mb-4">
+         Select And Submit To Join One Of Our Courses
+        </h2>
+
+        <div
+          class="flex flex-wrap items-center gap-3 mb-3">
+
+          <span class="font-bold text-white">
+            Leenalkhateeb@gmail.com
+          </span>
+
+       <a href="https://www.google.com/account/about/?hl=en-US" 
+        target="_blank" 
+        class="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200 font-medium">
+         Switch Account
+          </a>
+
+          <i class="fa-solid fa-cloud-arrow-up text-[#27a7fd]"></i>
+
+        </div>
+
+        <p class="text-gray-300">
+          Your email and data will be recorded when submitting
+        </p>
+
+        <p class="text-red-600 mt-2">
+          * Required fields
+        </p>
+
+      </div>
+
+      <form class="space-y-6">
+
+        <div>
+
+          <label class="font-bold block mb-2">
+            Email *
+          </label>
+
+          <input
+            type="email"
+            placeholder="Your Email Address"
+            class="w-full p-4 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[#27a7fd]">
+
+        </div>
+
+        <div>
+
+          <label class="font-bold block mb-2">
+            Full Name *
+          </label>
+
+          <input
+            type="text"
+            placeholder="Your Full Name"
+            class="w-full p-4 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[#27a7fd]">
+
+        </div>
+
+        <div>
+
+          <label class="font-bold block mb-2">
+            Phone Number *
+          </label>
+
+          <input
+            type="tel"
+            placeholder="Your Phone Number"
+            class="w-full p-4 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[#27a7fd]">
+
+        </div>
+
+        <div>
+
+          <label class="font-bold block mb-2">
+            Course *
+          </label>
+
+          <select
+            class="w-full p-4 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[#27a7fd]">
+
+            <option>Select Course</option>
+
+            <option>Angular</option>
+
+            <option>ASP.NET</option>
+
+            <option>Python</option>
+
+          </select>
+
+        </div>
+
+
+
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+
+          <button
+            class="bg-blue-600 hover:bg-blue-700 transition px-8 py-4 rounded-lg font-bold">
+
+            Submit
+
+          </button>
+
+          <button
+            type="reset"
+            class="border border-gray-600 hover:bg-[#333] transition px-8 py-4 rounded-lg font-bold">
+
+            Clear Form
+
+          </button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <footer
+    class="text-center py-10 border-t border-[#333] text-gray-400">
+
+    <p class="mb-4">
+      &copy; My Website
+    </p>
+
+    <a href="#"
+      class="text-[#4db8ff] hover:text-white transition">
+
+      Back To Top
+
+    </a>
+
+  </footer>
+
+</body>
+
 </html>
