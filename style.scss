@@ -1,4 +1,4 @@
-
+/*
 $bg-main: #1a1a1a;
 $bg-card: #252525;
 $bg-nav: #333;
@@ -103,7 +103,7 @@ section {
     padding: 20px;
     border-radius: $radius;
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 
@@ -283,15 +283,12 @@ select {
 
         border-radius: 6px;
 
-        cursor: pointer;
+       
 
         font-weight: bold;
 
         transition: $transition;
 
-        &:hover {
-            transform: translateY(-2px);
-        }
 
     }
 
@@ -406,3 +403,4 @@ hr {
 
 }
 
+*/

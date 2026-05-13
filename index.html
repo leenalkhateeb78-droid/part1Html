@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
 
@@ -15,69 +15,41 @@
 
 </head>
 
-<body class="bg-[#1a1a1a] text-[#e0e0e0] font-sans scroll-smooth pt-20">
+<body class="bg-zinc-900 text-zinc-300 font-sans pt-20">
 
 
 
   <nav
-    class="fixed top-0 left-0 w-full z-50 bg-[#333]/90 backdrop-blur-md border-b border-gray-700 py-4">
+    class="fixed top-0 left-0 w-full z-50 bg-zinc-800/90 backdrop-blur-md border-b border-zinc-700 py-4">
 
     <div class="max-w-7xl mx-auto px-6">
 
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
 
-        <h1 class="text-3xl font-bold text-[#27a7fd]">
+        <p class="text-3xl font-bold text-blue-500">
           My Project Leen
-        </h1>
+        </p>
 
         <ul
-          class="flex flex-wrap justify-center gap-6 text-sm md:text-base font-bold">
+          class="flex flex-wrap justify-center gap-6 text-sm md:text-base font-bold text-zinc-200">
 
           <li>
-            <a href="#html"
-              class="hover:text-white transition duration-300">
-              Learning HTML
+            <a href="#section-1"
+              class="hover:text-blue-400 transition duration-300">
+              Learning & Vacation
             </a>
           </li>
 
           <li>
-            <a href="#vacation"
-              class="hover:text-white transition duration-300">
-              Vacation
-            </a>
-          </li>
-
-          <li>
-            <a href="#projects"
-              class="hover:text-white transition duration-300">
-              Projects
-            </a>
-          </li>
-
-          <li>
-            <a href="#colors"
-              class="hover:text-white transition duration-300">
-              Colors
-            </a>
-          </li>
-
-          <li>
-            <a href="#food"
-              class="hover:text-white transition duration-300">
-              Food
-            </a>
-          </li>
-
-          <li>
-            <a href="#trip"
-              class="hover:text-white transition duration-300">
-              Trip
+            <a href="#section-2"
+              class="hover:text-blue-400 transition duration-300">
+              Interests
             </a>
           </li>
 
           <li>
             <a href="#form"
-              class="hover:text-white transition duration-300">
+              class="hover:text-blue-400 transition duration-300">
               Form
             </a>
           </li>
@@ -113,7 +85,7 @@
         Welcome To My Website
       </h1>
 
-      <p class="text-lg md:text-2xl text-gray-300">
+      <p class="text-lg md:text-2xl text-zinc-400">
         Learn HTML And Build Amazing Projects
       </p>
 
@@ -127,21 +99,22 @@
 
 
 
-    <div class="flex flex-col md:flex-row gap-6 mb-14">
+    <div id="section-1"
+      class="flex flex-col md:flex-row gap-6 mb-14 scroll-mt-28">
 
 
       <section id="html"
-        class="flex-1 bg-[#252525] p-8 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition duration-300">
+        class="flex-1 bg-zinc-800 p-8 rounded-xl shadow-lg border border-zinc-700 hover:scale-105 transition duration-300">
 
-        <h2 class="text-3xl font-bold text-[#27a7fd] mb-4">
+        <h2 class="text-3xl font-bold text-blue-500 mb-4">
           HTML
         </h2>
 
-        <p class="mb-4 text-gray-300">
+        <p class="mb-4 text-zinc-300">
           This is my first web page.
         </p>
 
-        <ol class="list-decimal pl-5 space-y-2 text-gray-400">
+        <ol class="list-decimal pl-5 space-y-2 text-zinc-400">
 
           <li>I learned more about web development.</li>
 
@@ -154,17 +127,17 @@
 
 
       <section id="vacation"
-        class="flex-1 bg-[#252525] p-8 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition duration-300">
+        class="flex-1 bg-zinc-800 p-8 rounded-xl shadow-lg border border-zinc-700 hover:scale-105 transition duration-300">
 
-        <h2 class="text-3xl font-bold text-[#27a7fd] mb-4">
+        <h2 class="text-3xl font-bold text-blue-500 mb-4">
           Vacation
         </h2>
 
-        <p class="mb-4 text-gray-300">
+        <p class="mb-4 text-zinc-300">
           I need a break somewhere cold.
         </p>
 
-        <ul class="list-disc pl-5 space-y-2 text-gray-400">
+        <ul class="list-disc pl-5 space-y-2 text-zinc-400">
 
           <li>North Pole</li>
 
@@ -179,36 +152,38 @@
     </div>
 
 
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
 
-      <section
-        id="colors"
-        class="bg-[#252525] p-6 rounded-xl border border-gray-700 hover:-translate-y-2 transition duration-300">
+    <div id="section-2"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 scroll-mt-28">
 
-        <h2 class="text-2xl font-bold text-[#27a7fd] mb-4">
+
+      <section id="colors"
+        class="bg-zinc-800 p-6 rounded-xl border border-zinc-700 hover:-translate-y-2 transition duration-300 shadow-md">
+
+        <h2 class="text-2xl font-bold text-blue-500 mb-4">
           Favorite Colors
         </h2>
 
-        <ul class="space-y-2 text-gray-300">
+        <ul class="space-y-2 text-zinc-300">
 
-          <li>Red</li>
+          <li class="text-red-500 font-medium">Red</li>
 
-          <li>Green</li>
+          <li class="text-green-500 font-medium">Green</li>
 
         </ul>
 
       </section>
 
-      <section
-        id="projects"
-        class="bg-[#252525] p-6 rounded-xl border border-gray-700 hover:-translate-y-2 transition duration-300">
 
-        <h2 class="text-2xl font-bold text-[#27a7fd] mb-4">
+
+      <section id="projects"
+        class="bg-zinc-800 p-6 rounded-xl border border-zinc-700 hover:-translate-y-2 transition duration-300 shadow-md">
+
+        <h2 class="text-2xl font-bold text-blue-500 mb-4">
           Projects
         </h2>
 
-        <ul class="space-y-2 text-gray-300">
+        <ul class="space-y-2 text-zinc-300">
 
           <li>Angular</li>
 
@@ -218,15 +193,16 @@
 
       </section>
 
-      <section
-        id="trip"
-        class="bg-[#252525] p-6 rounded-xl border border-gray-700 hover:-translate-y-2 transition duration-300">
 
-        <h2 class="text-2xl font-bold text-[#27a7fd] mb-4">
+
+      <section id="trip"
+        class="bg-zinc-800 p-6 rounded-xl border border-zinc-700 hover:-translate-y-2 transition duration-300 shadow-md">
+
+        <h2 class="text-2xl font-bold text-blue-500 mb-4">
           My Trip
         </h2>
 
-        <ul class="space-y-2 text-gray-300">
+        <ul class="space-y-2 text-zinc-300">
 
           <li>Aqaba</li>
 
@@ -236,15 +212,16 @@
 
       </section>
 
-      <section
-        id="food"
-        class="bg-[#252525] p-6 rounded-xl border border-gray-700 hover:-translate-y-2 transition duration-300">
 
-        <h2 class="text-2xl font-bold text-[#27a7fd] mb-4">
+
+      <section id="food"
+        class="bg-zinc-800 p-6 rounded-xl border border-zinc-700 hover:-translate-y-2 transition duration-300 shadow-md">
+
+        <h2 class="text-2xl font-bold text-blue-500 mb-4">
           Favorite Food
         </h2>
 
-        <ul class="space-y-2 text-gray-300">
+        <ul class="space-y-2 text-zinc-300">
 
           <li>Steak</li>
 
@@ -259,90 +236,85 @@
 
 
     <section id="form"
-      class="sticky top-28 max-w-4xl mx-auto bg-[#252525] border border-gray-700 rounded-2xl p-10 shadow-2xl">
+      class="scroll-mt-28 max-w-4xl mx-auto bg-zinc-800 border border-zinc-700 rounded-2xl p-10 shadow-2xl">
 
       <div class="mb-8">
 
-        <h2 class="text-4xl font-bold text-[#27a7fd] mb-4">
-         Select And Submit To Join One Of Our Courses
+        <h2 class="text-4xl font-bold text-blue-500 mb-4">
+          Select And Submit To Join One Of Our Courses
         </h2>
 
-        <div
-          class="flex flex-wrap items-center gap-3 mb-3">
+        <div class="flex flex-wrap items-center gap-3 mb-3">
 
           <span class="font-bold text-white">
             Leenalkhateeb@gmail.com
           </span>
 
-       <a href="https://www.google.com/account/about/?hl=en-US" 
-        target="_blank" 
-        class="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200 font-medium">
-         Switch Account
+          <a href="https://www.google.com/account/about/?hl=en-US"
+            target="_blank"
+            class="text-blue-500 hover:text-blue-400 hover:underline transition-colors duration-200 font-medium">
+            Switch Account
           </a>
 
-          <i class="fa-solid fa-cloud-arrow-up text-[#27a7fd]"></i>
+          <i class="fa-solid fa-cloud-arrow-up text-blue-500"></i>
 
         </div>
 
-        <p class="text-gray-300">
+        <p class="text-zinc-400">
           Your email and data will be recorded when submitting
         </p>
 
-        <p class="text-red-600 mt-2">
+        <p class="text-red-500 mt-2">
           * Required fields
         </p>
 
       </div>
 
+
+
       <form class="space-y-6">
 
         <div>
 
-          <label class="font-bold block mb-2">
+          <label class="font-bold block mb-2 text-zinc-200">
             Email *
           </label>
 
-          <input
-            type="email"
-            placeholder="Your Email Address"
-            class="w-full p-4 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[#27a7fd]">
+          <input type="email" placeholder="Your Email Address"
+            class="w-full p-4 rounded-lg bg-zinc-900 border border-zinc-700 focus:outline-none focus:border-blue-500 text-zinc-300">
 
         </div>
 
         <div>
 
-          <label class="font-bold block mb-2">
+          <label class="font-bold block mb-2 text-zinc-200">
             Full Name *
           </label>
 
-          <input
-            type="text"
-            placeholder="Your Full Name"
-            class="w-full p-4 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[#27a7fd]">
+          <input type="text" placeholder="Your Full Name"
+            class="w-full p-4 rounded-lg bg-zinc-900 border border-zinc-700 focus:outline-none focus:border-blue-500 text-zinc-300">
 
         </div>
 
         <div>
 
-          <label class="font-bold block mb-2">
+          <label class="font-bold block mb-2 text-zinc-200">
             Phone Number *
           </label>
 
-          <input
-            type="tel"
-            placeholder="Your Phone Number"
-            class="w-full p-4 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[#27a7fd]">
+          <input type="tel" placeholder="Your Phone Number"
+            class="w-full p-4 rounded-lg bg-zinc-900 border border-zinc-700 focus:outline-none focus:border-blue-500 text-zinc-300">
 
         </div>
 
         <div>
 
-          <label class="font-bold block mb-2">
+          <label class="font-bold block mb-2 text-zinc-200">
             Course *
           </label>
 
           <select
-            class="w-full p-4 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[#27a7fd]">
+            class="w-full p-4 rounded-lg bg-zinc-900 border border-zinc-700 focus:outline-none focus:border-blue-500 text-zinc-300">
 
             <option>Select Course</option>
 
@@ -361,18 +333,13 @@
         <div class="flex flex-col sm:flex-row gap-4 pt-4">
 
           <button
-            class="bg-blue-600 hover:bg-blue-700 transition px-8 py-4 rounded-lg font-bold">
-
+            class="bg-blue-600 hover:bg-blue-700 text-white transition px-8 py-4 rounded-lg font-bold">
             Submit
-
           </button>
 
-          <button
-            type="reset"
-            class="border border-gray-600 hover:bg-[#333] transition px-8 py-4 rounded-lg font-bold">
-
+          <button type="reset"
+            class="border border-zinc-600 hover:bg-zinc-700 text-zinc-300 transition px-8 py-4 rounded-lg font-bold">
             Clear Form
-
           </button>
 
         </div>
@@ -381,24 +348,22 @@
 
     </section>
 
+
+
   </main>
 
 
-  <footer
-    class="text-center py-10 border-t border-[#333] text-gray-400">
+
+  <footer class="text-center py-10 border-t border-zinc-800 text-zinc-500">
 
     <p class="mb-4">
       &copy; My Website
     </p>
 
-    <a href="#"
-      class="text-[#4db8ff] hover:text-white transition">
-
-      Back To Top
-
-    </a>
 
   </footer>
+
+
 
 </body>
 
